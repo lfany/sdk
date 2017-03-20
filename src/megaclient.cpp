@@ -28,7 +28,8 @@ namespace mega {
 // FIXME: instead of copying nodes, move if the source is in the rubbish to reduce node creation load on the servers
 // FIXME: prevent synced folder from being moved into another synced folder
 
-bool MegaClient::disablepkp = false;
+// DO NOT MERGE THIS!!
+bool MegaClient::disablepkp = true;
 
 // root URL for API access
 string MegaClient::APIURL = "https://g.api.mega.co.nz/";

@@ -863,7 +863,9 @@ CommandPutNodes::CommandPutNodes(MegaClient* client, handle th,
                 break;
 
             case NEW_UPLOAD:
-                arg("h", nn[i].uploadtoken, sizeof nn->uploadtoken);
+                // DO NOT MERGE THIS!!!
+                arg("h", nn[i].uploadtoken, NewNode::OLDUPLOADTOKENLEN);
+                //arg("h", nn[i].uploadtoken, sizeof nn->uploadtoken);
 
                 // include pending file attributes for this upload
                 string s;
