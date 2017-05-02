@@ -48,11 +48,6 @@
  */
 - (instancetype)clone;
 
-/**
- * @brief Add new node to nodeList
- * @param node to be added. The node inserted is a copy from 'node'
- */
-- (void)addNode:(MEGANode *)node;
 
 /**
  * @brief Returns the MEGANode at the position index in the MEGANodeList.
